@@ -1,0 +1,73 @@
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: blue;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: dodgerblue;
+    color: white;
+  }
+
+body{
+  background-image: url("techlogo.jpg");
+  background-size: cover;
+}
+button {
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  background-color: blue;
+  font-size: 300%;
+  font-family :monospace;
+}
+h2{
+  font-family: monospace;
+}
+h3{
+  font-family: monospace;
+  font-size: 25px;
+  color: white;
+}
+p{
+  font-family: monospace;
+  font-size: 21px;
+  color: white;
+
+}
+aside{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+var slideIndex = 1;
+showDivs(mySlides);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}

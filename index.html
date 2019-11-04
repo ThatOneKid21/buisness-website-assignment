@@ -2,74 +2,22 @@
 <html lang="en" dir="ltr">
   <head>
     <title>Techaholic.com</title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
    <noscript><h1 style="color:red;">JavaScript needs to be enabled in Settings</h1></noscript>
    <meta charset="utf-8">
    <meta name="author" content="Kevin Link">
    <meta name="description" content="Techaholic.com"> <!-- Webpage Description to poplulate search engines like Google-->
    <meta name="keywords" content="tech"> <!-- Key words for searching -->
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <style>
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: blue;
-  }
-
-  li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-
-  /* Change the link color on hover */
-  li a:hover {
-    background-color: dodgerblue;
-    color: white;
-  }
-
-body{
-  background-image: url("techlogo.jpg");
-  background-size: cover;
-}
-button {
-  text-align: center;
-}
-
-h1{
-  text-align: center;
-  background-color: blue;
-  font-size: 300%;
-  font-family :monospace;
-}
-h2{
-  font-family: monospace;
-}
-h3{
-  font-family: monospace;
-  font-size: 25px;
-  color: white;
-}
-p{
-  font-family: monospace;
-  font-size: 21px;
-  color: white;
-
-}
-aside{
-  font-size: 30px;
-  text-align: center;
-  color: white;
-}
-
-  </style>
+</head>
   <body>
     <header><h1>Techaholic.com</h1></header>
     <b><aside>For all those technology addicts.</aside></b>
+    <img class="mySlides" src="raspberry.jpg" width="250" height="200">
+    <img class="mySlides" src="Arduino.png" width="250" height="200">
+    <img class="mySlides" src="RaspberryPi.png" width="250" height="200">
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
       <ul>
         <li><a href="child_pages/Tech Stuff.html">Tech Stuff</a></li>
         <li><a href="child_pages/Information.html">information</a></li>
